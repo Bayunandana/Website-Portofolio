@@ -534,8 +534,24 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.relative {
+  position: relative;
+}
+
 .sticky {
   position: sticky;
+}
+
+.-top-20 {
+  top: -5rem;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .mx-auto {
@@ -547,6 +563,10 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -555,12 +575,12 @@ video {
   height: 100vh;
 }
 
-.w-9\/12 {
-  width: 75%;
-}
-
 .w-5 {
   width: 1.25rem;
+}
+
+.w-9\/12 {
+  width: 75%;
 }
 
 .basis-1\/2 {
@@ -571,21 +591,67 @@ video {
   flex-basis: 25%;
 }
 
+.origin-center {
+  transform-origin: center;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.place-items-center {
+  place-items: center;
+}
+
+.content-center {
+  align-content: center;
 }
 
 .items-center {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-evenly {
   justify-content: space-evenly;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .bg-gray-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(3 7 18 / var(--tw-bg-opacity));
+}
+
+.bg-slate-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 6 23 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .stroke-gray-400 {
@@ -596,9 +662,67 @@ video {
   stroke-width: 2;
 }
 
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
+
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .text-2xl {
@@ -606,9 +730,19 @@ video {
   line-height: 2rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-extrabold {
@@ -621,6 +755,10 @@ video {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.tracking-jauh {
+  letter-spacing: .5em;
 }
 
 .text-blue-400 {
